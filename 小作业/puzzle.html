@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>博德之门DLC</title>
+<style type="text/css">
+.super-large-button {
+  width: 400px; /* 或者更大 */
+  height: 100px; /* 或者更大 */
+  padding: 20px; /* 按钮内部空间 */
+  font-size: 36px; /* 文字大小 */
+  /* 可以添加其他样式，如边框、背景色等 */
+}
+body{text-align:center}
+.center-block {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 90%; /* 根据需要设置宽度 */
+}
+p {
+  text-align: left; /* 左对齐文本 */
+  margin: 0 auto; /* 上下保持0，左右自动居中 */
+  max-width: 1200px; /* 设置最大宽度 */
+}
+p.center-horizontal {
+  text-align: center;
+}
+.hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1; /* 可选：为背景图片设置透明度 */
+  }
+  .popup-img {
+    max-width: 70%;
+    height: auto; /* 保持宽高比 */
+    position: fixed; /* 固定位置 */
+    top: 50%; /* 初始位置在屏幕中间 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 调整图片位置，使其完全居中 */
+    z-index: 9999; /* 确保图片显示在其他内容之上 */
+  }
+</style>
+</head>
+<body>
+  <div class="background-image" style="background-image: url('幽暗地域.png');"></div>
+  <h1 id='demo' class="center-block">欢迎来到博德之门3DLC，好好享受吧！</h1>
+  <p id="demo1" class="center-left">首先恭喜博德之门3获得2024年大满贯，成为继上古卷轴5、塞尔达传说：旷野之息、艾尔登法环后第四个同时获得TGA、DICE、GDC、金摇杆年度游戏的游戏，但是，因为前几天博德之门的工作室拉瑞安宣布不会再制作续作博德之门4或DLC，我非常的难过，于是做了这个。如果你没有玩过博德之门3且并不了解博德之门3的剧情也可以玩这个博德之门DLC的demo，请好好享受吧！</p></br>
+  <p id=demo2 class="center-horizontal">点击下方按钮开始游玩</p></br>
+  <button id="button1">开始冒险</button></br>
+</br>
+
+  <button id="playButton" class="super-large-button">点击播放音频</button>
+    <audio id="myAudio">
+        <source src="42 Baldur's Gate 3 OST - I Want To Live.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 元素。
+    </audio>
+
+  <!-- 隐藏的新按钮容器 -->
+<div id="newButtonsContainer" class="hidden">
+  <button id="button2">寻找阿斯代伦</button>
+  <button id="button3">继续睡觉</button>
+</div>
+
+<!-- 隐藏的新按钮容器 -->
+<div id="newButtonsContainer1">
+<button id="button4">出门寻找</button>
+<button id="button5">在家等待</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button6">向西出发</button>
+<button id="button7">向北出发</button>
+<button id="button8">向南出发</button>
+<button id="button9">回家等去独自买药的阿斯代伦</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button10">游说：说服灰矮人</button>
+<button id="button11">力量：推开灰矮人</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button12">向北继续前进</button>
+<button id="button13">向南继续前进</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button14">攻击蕈人王</button>
+<button id="button15">询问蕈人王</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button16">给蕈人王施一个火球术</button>
+<button id="button17">给蕈人王一瓶解毒剂</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button18">攻击蕈人王</button>
+<button id="button19">询问蕈人王</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button20">给蕈人王施一个火球术</button>
+<button id="button21">给蕈人王一瓶解毒剂</button>
+</div>
+
+<div id="newButtonsContainer1">
+<button id="button22" onclick="popupImg()">通关结算！</button>
+</div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
