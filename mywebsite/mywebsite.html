@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baozi's home</title>
+    <!-- 新 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.net/popper.js/2.9.3/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">baozi's home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#hobbies" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hobbies
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#movies">Movies</a></li>
+                        <li><a class="dropdown-item" href="#games">Games</a></li>
+                        <li><a class="dropdown-item" href="#musics">Musics</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 网页内容 -->
+<div class="content-container" style="margin-top: 70px;"> <!-- 添加一些空白以防止内容被导航栏覆盖 -->
+
+  <div id="home" class="container mt-5">
+    <h1>Welcome to baozi's Home</h1>
+    <p class="styled-paragraph">欢迎来到包子的个人网站，这里你能够更加了解包子！</p>
+    <!-- Add more content here as needed -->
+    <!-- 添加一个按钮 -->
+    <div id="displayInput"></div>
+<button id="inputButton">输入名字</button>
+
+  <script>
+    // 获取按钮元素
+    const inputButton = document.getElementById('inputButton');
+    // 获取用于显示输入文本的元素
+    const displayInput = document.getElementById('displayInput');
+
+    // 为按钮添加点击事件监听器
+    inputButton.addEventListener('click', function() {
+      // 使用 prompt 函数弹出对话框让用户输入文本
+      const userInput = prompt('你的名字：');
+
+      // 如果用户输入了文本（不是 null 或空字符串），则显示它
+      if (userInput !== null && userInput !== '') {
+        displayInput.textContent = '你好！' + userInput;
+      }
+    });
+  </script>
+</div>
+
+<!-- 联系方式 -->
+<div id="about" class="container py-5" style="background-color: #f8f9fa; border-radius: 10px;">
+    <h2 class="text-center text-uppercase my-4">联系我</h2>
+    <p class="text-center">您可以通过以下方式与我联系：baosmoxian@163.com</p>
+</div>
+
+<div id="movies" class="container mt-5">
+  <p>My favourite movies.</p>
+  <div class="row">
+      <!-- 卡片1 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="17.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">好兆头</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="18.jpg" class="card-img-top" alt="Card Image 2">
+              <div class="card-body">
+                  <h5 class="card-title">神秘博士</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="19.jpg" class="card-img-top" alt="Card Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">3年A班</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="20.jpg" class="card-img-top" alt="Card Image 4">
+              <div class="card-body">
+                  <h5 class="card-title">你想活出怎样的人生</h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="21.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">小丑</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="22.jpg" class="card-img-top" alt="Card Image 2">
+              <div class="card-body">
+                  <h5 class="card-title">复仇者联盟</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="23.jpg" class="card-img-top" alt="Card Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">哈利波特</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="24.jpg" class="card-img-top" alt="Card Image 4">
+              <div class="card-body">
+                  <h5 class="card-title">舞台剧</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="games" class="container mt-5">
+  <p>My favourite games.</p>
+  <div class="row">
+      <!-- 卡片1 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="9.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">博德之门3</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="10.jpg" class="card-img-top" alt="Card Image 2">
+              <div class="card-body">
+                  <h5 class="card-title">底特律化身为人</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="11.jpg" class="card-img-top" alt="Card Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">荒野大镖客2</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="12.jpg" class="card-img-top" alt="Card Image 4">
+              <div class="card-body">
+                  <h5 class="card-title">荒野乱斗</h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="13.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">小丑牌</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="14.jpg" class="card-img-top" alt="Card Image 2">
+              <div class="card-body">
+                  <h5 class="card-title">死亡搁浅</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="15.jpg" class="card-img-top" alt="Card Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">泰拉瑞亚</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="16.jpg" class="card-img-top" alt="Card Image 4">
+              <div class="card-body">
+                  <h5 class="card-title">星露谷物语</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="musics" class="container mt-5">
+  <p>My favourite musics.</p>
+  <div class="row">
+      <!-- 卡片1 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="1.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">Toyko Drifting</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="2.jpg" class="card-img-top" alt="Card Image 2">
+              <div class="card-body">
+                  <h5 class="card-title">The Other Side Of Paradise</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="3.jpg" class="card-img-top" alt="Card Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">Gooey</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="4.jpg" class="card-img-top" alt="Card Image 4">
+              <div class="card-body">
+                  <h5 class="card-title">Dreamland</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片1 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="5.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                  <h5 class="card-title">Your Love</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片2 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="6.jpg" class="card-img-top" alt="Card Image 2">
+              <div class="card-body">
+                  <h5 class="card-title">Pork Soda</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片3 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="7.jpg" class="card-img-top" alt="Card Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">Helium</h5>
+              </div>
+          </div>
+      </div>
+      <!-- 卡片4 -->
+      <div class="col-12 col-md-3">
+          <div class="card">
+              <img src="8.jpg" class="card-img-top" alt="Card Image 4">
+              <div class="card-body">
+                  <h5 class="card-title">Youth</h5>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+</div>
+<script src="webscript.js"></script>
+</body>
+</html>

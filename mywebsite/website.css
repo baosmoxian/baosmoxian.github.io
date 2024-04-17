@@ -1,0 +1,114 @@
+/* Custom styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #343a40 !important;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: #ffc107 !important;
+}
+.dropdown-menu {
+    background-color: #343a40;
+}
+.dropdown-item {
+    color: #fff !important;
+}
+.dropdown-item:hover {
+    background-color: #343a40 !important;
+    color: #ffc107 !important;
+}
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .container {
+        max-width: 900px;
+    }
+}
+.container h1 {
+  text-align: center;
+}
+}
+.container p {
+  text-align: center;
+}
+body {
+  background-image: url('hhholographic.jpg'); /* 替换为您的背景图片路径 */
+  background-size: cover; /* 背景图片尺寸覆盖整个屏幕 */
+  background-position: center; /* 背景图片居中 */
+  background-repeat: no-repeat; /* 不重复背景图片 */
+  background-attachment: fixed; /* 将背景图片固定 */
+  background-color: #f8f9fa; /* 设置背景颜色为浅色 */
+}
+.navbar {
+      background-color: #A9E0FF !important; /* 替换为您想要的背景颜色 */
+}
+.navbar-brand, .nav-link {
+  color: #000000 !important; /* 替换为您想要的文本颜色 */
+}
+.navbar-brand:hover, .nav-link:hover {
+color: #FF73FC !important; /* 替换为您想要的鼠标悬停时的文本颜色 */
+}
+
+.dropdown-menu {
+background-color: #FFA1FD; /* 替换为您想要的下拉菜单背景颜色 */
+}
+.dropdown-item {
+color: #000000 !important; /* 替换为您想要的下拉菜单文本颜色 */
+}
+.dropdown-item:hover {
+background-color: #FF73FC !important; /* 替换为您想要的下拉菜单鼠标悬停时的背景颜色 */
+color: #FFFFFF !important; /* 替换为您想要的下拉菜单鼠标悬停时的文本颜色 */
+}
+.content-container {
+  padding-top: 70px; /* 顶部内边距等于导航栏的高度 */
+}
+/* 自定义样式 */
+        .card {
+            border: none; /* 移除边框 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+            transition: transform 0.3s ease; /* 添加过渡效果 */
+            margin-bottom: 20px; /* 卡片底部间距 */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* 鼠标悬停时放大 */
+        }
+
+        .card-img-top {
+            border-radius: 0%; /* 图片圆角 */
+            object-fit: cover; /* 图片覆盖整个容器 */
+            height: 150px; /* 设置图片高度 */
+            width: 150px; /* 设置图片宽度 */
+        }
+
+        .card-body {
+            padding: 15px; /* 内容区域内边距 */
+        }
+
+        /* 响应式布局调整 */
+        @media (max-width: 768px) {
+            /* 在小屏幕设备上，每个卡片占据整行 */
+            .col-md-3 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .styled-paragraph {
+    font-family: 'Arial', sans-serif; /* 字体 */
+    color: #333333; /* 字体颜色 */
+    font-size: 16px; /* 字体大小 */
+    line-height: 1.5; /* 行高 */
+    margin-bottom: 20px; /* 下边距 */
+    text-align: justify; /* 文本对齐方式 */
+}
+#displayInput {
+    text-align: center; /* 使文本水平居中 */
+    display: flex;
+    align-items: center; /* 使文本垂直居中，如果displayInput是行内元素或行内块元素 */
+    justify-content: center; /* 使文本水平居中，如果displayInput是flex容器 */
+    height: /* 设置一个合适的高度 */; /* 如果需要垂直居中 */
+  }
